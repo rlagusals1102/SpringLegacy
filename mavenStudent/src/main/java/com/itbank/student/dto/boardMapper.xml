@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.itbank.student.dto.boardMapper"> 
+	<select id="listBoard" resultType="boardDTO">
+		select * from board order by num desc
+	</select>
+	
+	<insert id="insertBoard" parameterType="boardDTO">
+		insert into board values(board_seq.nextval, #{writer}, 
+		#{email}, #{subject}, #{passwd}, sysdate, 0, #{content}, #{ip})
+	</insert>
+	
+	<update id="plusReadcount" parameterType="int">
+		update board set readcount = readcount + 1 where num = #{num}
+	</update>
+	
+	<select id="getBoard" parameterType="int" resultType="boardDTO">
+		select * from board where num = #{num}
+	</select>
+	
+	<delete id="deleteBoard" parameterType="int">
+		delete from board where num = #{num}
+	</delete>
+	
+	<update id="updateBoard" parameterType="boardDTO">
+		update board set subject=#{subject}, email=#{email}, content=#{content}, ip=#{ip} 
+		where num = #{num}
+	</update>
+</mapper>
+
+
+
+
+
+
+
+
+

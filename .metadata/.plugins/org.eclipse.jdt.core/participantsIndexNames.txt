@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\rlagu\Desktop\spring_e\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2807925938.index
+\mavenStudent\src\main\java
+C:\Users\rlagu\Desktop\spring_e\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\682291093.index
+\mavenStudent\src\main\java
+C:\Users\rlagu\Desktop\spring_e\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2522510219.index
+\mavenStudent\src\main\java
